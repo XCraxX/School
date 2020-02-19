@@ -1,0 +1,164 @@
+/*#BF3026,#802019,#FF4133,#40100D,#E63A2E*/
+
+.respnav {
+  align-items: left;
+  background-color: black;
+  overflow:hidden;
+}
+
+.homeimg {
+  width: 100vw;
+  height: 100vh;
+}
+
+.respnav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 14px 16px;
+  display: block;
+  text-align: center;
+  float: left;
+  font-family: Oswald, Arial, sans-serif;
+}
+
+.respnav a:hover {
+  background-color: #40100d;
+}
+
+.respnav a {
+  list-style: none;
+}
+
+body {
+  margin: 0;
+}
+
+.firstimg {
+  background: url("/img/Eiger.jpg");
+  background-size: 100vw 100vh;
+}
+
+.phome {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 7px 7px 10px black;
+  color: #ff4133;
+  font-family: Calistoga, Arial, cursive;
+}
+
+.homemain {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutback {
+  background: linear-gradient(90deg, #40100d, #bf3026, #40100d);
+}
+
+.aboutfont {
+  color: #ff4133;
+  font-size: 20px;
+}
+
+.aboutcanv {
+  width: 50vw;
+  height: 50vh;
+  display: block;
+}
+
+.aboutpic {
+  position: absolute;
+  top: 50px;
+  right: 25px;
+  height: 450px;
+  width: 300px;
+}
+
+.contacta {
+  text-decoration: none;
+  text-align: left;
+  padding-left: 10px;
+  color: #ff4133;
+  font-size: 60px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #f2f2f2;
+  margin: 6px;
+  transition: 0.4s;
+}
+
+.hobbyjpg1 {
+  height: auto;
+  width: 20%;
+}
+
+.respnav .barcontainer {
+  float: right;
+  display: none;
+}
+
+.h1else {
+  font-family: Calistoga, Arial, cursive;
+}
+
+@media screen and (max-width: 600px) {
+  .respnav a:not(:first-child) {
+    display: none;
+  }
+
+  .firstimg{
+    background-size: 200vw 100vh;
+    background-position-x: 500px;
+  }
+
+  .hobbyjpg1{
+    height: auto;
+    width: 60%;
+  }
+
+  .respnav .barcontainer {
+    float: right;
+    display: block;
+    margin-right: 5px;
+    margin-top: 3px;
+  }
+
+  .respnav.responsive {
+    position: relative;
+  }
+
+  .respnav.responsive .barcontainer {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .respnav.responsive a {
+    float: none;
+    display: block;
+  }
+
+  .aboutpic{
+    display:none
+  }
+
+  .aboutcanv{
+width: 70vw;
+  }
+
+  .contacta {
+    text-decoration: none;
+    text-align: left;
+    padding-left: 5px;
+    color: #ff4133;
+    font-size: 20px;
+  }
+}
